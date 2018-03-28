@@ -1,20 +1,24 @@
 # Thanks to: https://gist.github.com/jdbartlett/444295
 
-# Ignore everything in the root except the "wp-content" directory.
+#Ignore everying in the root except "public" director
 /*
+!public/
 !.gitignore
-!wp-content/
+
+# Ignore everything in the root except the "wp-content" directory.
+public/*
+!public/wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
-wp-content/*
-!wp-content/plugins/
-!wp-content/themes/
+public/wp-content/*
+!public/wp-content/plugins/
+!public/wp-content/themes/
 
 # Ignore everything in the "plugins" directory, except the plugins you specify
-wp-content/plugins/*
-# !wp-content/plugins/my-single-file-plugin.php
-# !wp-content/plugins/my-directory-plugin/
+public/wp-content/plugins/*
+# !public/wp-content/plugins/my-single-file-plugin.php
+# !public/wp-content/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you specify
-wp-content/themes/*
-!wp-content/themes/pizzaria/
+public/wp-content/themes/*
+!public/wp-content/themes/pizzaria/
